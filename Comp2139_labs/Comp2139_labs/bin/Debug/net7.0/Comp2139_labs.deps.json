@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Comp2139_labs/1.0.0": {
+        "runtime": {
+          "Comp2139_labs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Comp2139_labs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
