@@ -1,0 +1,27 @@
+﻿@model Project
+
+@{
+    // Razor Block
+    ViewData["Title"] = "Projects";
+}
+
+<h2>Project Details</h2>
+
+<div class="card"
+
+        <div class="card-bodys">
+            <h3 class="card-tittle">@Model.Name</h3>
+            <p class="card-text">@Model.Description</p>
+
+
+            <dl>
+                <dt class="col-sm-3">Project Id</dt>
+                <dd class="col-sm-9">@Model.ProjectId</dd>
+                <!-- Any other properties that you want to display from your project -->
+            </dl>
+
+        </div>
+</div>
+
+<a asp-controller="Project" asp-action="Edit" asp-route-id="@Model.ProjectId" class="btn btn-primary">Edit</a>
+<a asp-controller="Project" asp-action="Index" class="btn btn-secondary">Back to List</a>

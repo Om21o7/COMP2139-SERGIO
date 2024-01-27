@@ -11,30 +11,37 @@
 {
 
 
-<table class="table">
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th></th>
             </tr>
         </thead>
-      <tbody>
-          @foreach (var project in Model)
-              {
+        <tbody>
+            @foreach (var project in Model)
+            {
                 <tr>
-                  <td>@project.ProjectId</td>
-                  <td>@project.Name</td>
-                  <td>@project.Description</td>
+                    <td>@project.ProjectId</td>
+                    <td>@project.Name</td>
+                    <td>@project.Description</td>
+                    <td>
+                        <a asp-action="Delete" class="btn btn-warning">Delete</a>
+                        <a asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-light">Info</a>
+                    </td>
                 </tr>
-              }
-      </tbody>
+            }
+        </tbody>
 
 
     </table>
-    
+    <a asp-action="Create" class="btn btn-primary">ADD</a>
+
+
 }
 else
 {
-        <p>No Projects avialable</p>
+    <p>No Projects avialable</p>
 }

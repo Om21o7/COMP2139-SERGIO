@@ -60,3 +60,14 @@
 /Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/obj/Debug/net7.0/Comp2139_labs.pdb
 /Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/obj/Debug/net7.0/Comp2139_labs.genruntimeconfig.cache
 /Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/obj/Debug/net7.0/ref/Comp2139_labs.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/Humanizer.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/MySqlConnector.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/bin/Debug/net7.0/System.CodeDom.dll
+/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/obj/Debug/net7.0/Comp2139_labs.csproj.CopyComplete

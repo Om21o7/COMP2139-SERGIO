@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Comp2139_labs.Models
+namespace Comp2139_labs
 {
 	public class Project
 	{

@@ -11,8 +11,16 @@ namespace Comp2139_labs.Controllers
 {
     public class ProjectController : Controller
     {
+        private readonly ApplicationDbContext _context;
+
+        public ProjectController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+
         [HttpGet]
-        // GET: /<controller>/
+        //GET: /<controller>/
         public IActionResult Index()
         {
             var projects = new List<Project>()
@@ -20,6 +28,26 @@ namespace Comp2139_labs.Controllers
                 new Project { ProjectId = 1, Name= "Project 1" , Description = "First Project"}
             };
             return View(projects);
+        }
+
+
+        [HttpGet]
+        public IActionResult Details(int Id)
+        {
+            var project = new Project { ProjectId = Id, Name = "Project " + Id, Description = "Details of project" + Id };
+            return View(project);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Project project)
+        {
+            return RedirectToAction("Index");
         }
     }
 }
