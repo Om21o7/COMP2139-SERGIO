@@ -6,7 +6,7 @@ namespace Comp2139_labs
 {
 	public class Project
 	{
-		[Required]
+		[Key]
 
 		public int ProjectId { get; set; }
 

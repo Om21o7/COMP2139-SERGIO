@@ -1,50 +1,47 @@
 ﻿<Properties StartupConfiguration="{150DB94C-A7C0-4350-9313-4EE8F72DBBD2}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Comp2139_labs/Views/Project/Create.cshtml">
+  <MonoDevelop.Ide.ItemProperties.Comp2139__labs PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Comp2139_labs/Data/ApplicationDbContext.cs">
     <Files>
-      <File FileName="Comp2139_labs/Program.cs" Line="11" Column="1" />
-      <File FileName="Comp2139_labs/Models/Project.cs" />
-      <File FileName="Comp2139_labs/Controllers/ProjectController.cs" Line="50" Column="46" />
-      <File FileName="Comp2139_labs/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Comp2139_labs/Views/Project/Index.cshtml" Line="19" Column="37" />
-      <File FileName="Comp2139_labs/Views/Shared/_Layout.cshtml" Line="39" Column="26" />
-      <File FileName="Comp2139_labs/appsettings.json" Line="13" Column="2" />
-      <File FileName="Comp2139_labs/Data/ApplicationDbContext.cs" />
-      <File FileName="Comp2139_labs/Views/Project/Create.cshtml" Line="3" Column="3" />
-      <File FileName="Comp2139_labs/Views/Project/Details.cshtml" Line="1" Column="3" />
-      <File FileName="Comp2139_labs/Migrations/20240126195721_initialcreate.cs" />
-      <File FileName="Comp2139_labs/Migrations/ApplicationDbContextModelSnapshot.cs" />
-      <File FileName="Comp2139_labs/Views/Home/About.cshtml" />
+      <File FileName="Comp2139_labs/Controllers/ProjectController.cs" Line="151" Column="44" />
+      <File FileName="Comp2139_labs/Controllers/HomeController.cs" Line="54" Column="29" />
+      <File FileName="Comp2139_labs/Views/Project/Index.cshtml" Line="59" Column="41" />
+      <File FileName="Comp2139_labs/Controllers/TaskController.cs" Line="68" Column="27" />
+      <File FileName="Comp2139_labs/Program.cs" Line="18" Column="70" />
+      <File FileName="Comp2139_labs/Models/ProjectTask.cs" Line="19" Column="8" />
+      <File FileName="Comp2139_labs/Models/Project.cs" Line="9" Column="7" />
+      <File FileName="Comp2139_labs/Views/Shared/NotFound.cshtml" Line="6" Column="19" />
+      <File FileName="Comp2139_labs/Data/ApplicationDbContext.cs" Line="12" Column="61" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Comp2139_labs" expanded="True">
+            <Node name="NuGet.Config files" expanded="True" />
             <Node name="Comp2139_labs">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
+              </Node>
               <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
               <Node name="Views">
                 <Node name="Home" expanded="True" />
-                <Node name="Project">
-                  <Node name="Create.cshtml" selected="True" />
-                </Node>
-                <Node name="Shared" expanded="True" />
+                <Node name="Project" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Comp2139__labs PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ProjectTask> // specifies the collections of ProjectTasks
+
+@{
+    ViewData["Title"] = "Tasks List";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Task Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Project Id</th>
+            <th>Action</th> <!--Columns for Actions like Details, Edits and delete-->
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <td>@task.ProjectTaskId</td>
+                <td>@task.Title</td>
+                <td>@task.Description</td>
+                <td>task.ProjectId</td>
+                <td>task.Action</td>
+                <td>
+                    <a asp-controller="Project" asp-action="Details" asp-route-id="@task.ProjectTaskId" class="btn btn-info">Details</a>
+                    <a asp-controller="Project" asp-action="Edit" asp-route-id="@task.ProjectId" class="btn btn-secondary">Edit</a>
+                    <a asp-controller="Project" asp-action="Delete" asp-route-id="@task.ProjectId" class="btn btn-danger">Delete</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+// Button to create a new task
+<a asp-action="Create" asp-route-projectId="@ViewBag.ProjectId" class="btn btn-primary">Create New Task</a>
+
+<a asp-controller="Project" asp-action="Index" class="btn btn-secondary">Back To Projects</a>

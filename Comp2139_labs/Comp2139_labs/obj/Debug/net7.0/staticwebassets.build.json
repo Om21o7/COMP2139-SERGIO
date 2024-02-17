@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9KSAJvqdd334rlrufoNn4nlh2a2uquuc8YVWxsq42eI=",
+  "Hash": "KjFPnVEDyod7b2+dT/PdB4JIuJr7ChMlU85efZ+JMSo=",
   "Source": "Comp2139_labs",
   "BasePath": "_content/Comp2139_labs",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/obj/Debug/net7.0/scopedcss/projectbundle/Comp2139_labs.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/wwwroot/.DS_Store",
+      "SourceId": "Comp2139_labs",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/wwwroot/",
+      "BasePath": "_content/Comp2139_labs",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/Users/ommakwana/Sem_4/SERGIO-COMP2139/Comp2139_friday/COMP2139-SERGIO/Comp2139_labs/Comp2139_labs/wwwroot/css/site.css",
