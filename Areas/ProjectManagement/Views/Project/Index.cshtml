@@ -1,0 +1,64 @@
+﻿@model List<Project>
+@{
+    //razor block
+    ViewData["Title"] = "Projects";
+    bool searchPerformed = ViewData["searchPerformed"] as bool? ?? false;
+    string searchString = ViewData["searchString"] as string;
+
+
+}
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Describtion</th>
+                <th></th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {  
+                <tr>
+                    <td>@item.ProjectId</td>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <!-- Inject ViewComponent-->
+                    <td>
+                        @await Component.InvokeAsync("ProjectSummary", new { projectId = item.ProjectId })
+                    </td>
+                    <td>
+                        <a asp-controller="Project" asp-action="Details" asp-route-id="@item.ProjectId" class="btn btn-light"><i class="fa-solid fa-info"></i></a>
+                        <a asp-controller="Project" asp-action="Delete" action="get" asp-route-id="@item.ProjectId" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                        <a asp-controller="Task" asp-action="Index" asp-route-projectID="@item.ProjectId" class="btn btn-warning" id="viewTask" style="margin-top:-0.1em;">View Tasks</a>
+                        <a asp-action="Edit" asp-route-id="@item.ProjectId" class="btn btn-secondary">Edit</a>
+
+
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <a asp-action="Create" method="post" class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
+
+
+}
+else
+{
+    if (searchPerformed)
+    {
+        <p>No Project Found with the name or describtion @searchString in databse</p>
+    }
+    else{
+    <p>No Project Found!</p>
+    }
+    <a asp-action="Create" method="post" class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
+
+}

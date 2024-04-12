@@ -1,0 +1,27 @@
+﻿
+@model ProjectTask
+
+@{
+    // Razor Block
+    ViewData["Title"] = "Projects Tasks";
+}
+<h2>Task Details</h2>
+
+<dl class="row">
+    <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Title)</dt>
+    <dd class="col-sm-10">@Html.DisplayFor(model => model.Title)</dd>
+
+    <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Description)</dt>
+    <dd class="col-sm-10">@Html.DisplayFor(model => model.Description)</dd>
+
+    <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Project.Name)</dt>
+    <dd class="col-sm-10">@Html.DisplayFor(model => model.Project.Name)</dd>
+
+
+    <!-- Any other properties that you want to display from your project -->
+</dl>
+
+
+
+<a asp-action="Edit" asp-route-id="@Model.ProjectTaskId" class="btn btn-primary">Edit</a>
+<a asp-action="Index" asp-route-projectId="@Model.ProjectId" class="btn btn-secondary">Back to List</a>
