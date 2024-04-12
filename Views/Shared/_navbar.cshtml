@@ -1,0 +1,70 @@
+﻿@using COMP2139_Labs.Areas.ProjectManagement.Models
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+
+@inject SignInManager<ApplicationUser> SignInMananger
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><b>Project Collabrator</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <form class="d-flex" asp-area="" asp-controller="Home" asp-action="GeneralSearch" method="get">
+                <input class="form-control" type="text" placeholder="Search" name="searchString" />
+                <select class="form-control btn btn-secondary dropdown-toggle" name="searchType">
+                    <option value="Projects">Projects</option>
+                    <option value="Tasks">Tasks</option>
+                </select>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav flex-grow-1" style="justify-content:right">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About"><i class="fa-solid fa-user"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="ProjectManagement" asp-controller="Project" asp-action="Index"><i class="fa-solid fa-bars-progress"></i> Projects</a>
+                </li>
+                @if (SignInMananger.IsSignedIn(User))
+                {
+                    @await Component.InvokeAsync("UserRole");
+                    <li class="nav-item d-flex align-items-center">
+                        @if (UserManager.GetUserAsync(User).Result.ProfilePic != null)
+                        {
+                            <img id="profilePicture" style="width: 40px; height: 30px;border-radius:20px; margin-right:2px; object-fit:cover"
+                                 src="data:image/;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.ProfilePic))" />
+                        }
+                        <a class="nav-link text-dark" 
+                        asp-area="Identity" asp-page="/Account/Manage/Index" 
+                        title="Manage Your Profile "> Hello @User.Identity.Name</a>
+                    </li>
+                    //profile
+                    <li class="nav-item">
+                        <form  asp-area="Identity" asp-page="/Account/Logout">
+                            <button type="submit" class="nav-link btn btn-link text-dark" style="cursor:pointer">Logout</button>
+                            </form>
+                    </li>
+                    //logout
+
+                    
+                }
+                else
+                {
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+                    </li>
+                    //login
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register"><i class="fa-solid fa-user-plus"></i>Register</a>
+                    </li>
+                    //register
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
